@@ -24,5 +24,4 @@ const userData = [
         "password": "cc123"
     }
 ]
-
 export default userData
