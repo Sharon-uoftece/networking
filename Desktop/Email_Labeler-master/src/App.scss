@@ -1,0 +1,1000 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
+@import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
+@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
+@import "~@blueprintjs/select/lib/css/blueprint-select.css";
+
+
+//brighter yellow: rgb(253, 192, 60);
+$sunlife-yellow:  rgb(253, 192, 60);
+$sunlife-dark: rgb(14, 56, 70);
+$yellow-white: rgb(252, 242, 177);
+$sunlife-header-yellow: rgb(255, 190, 35);
+$web-dark: rgb(10, 44, 55);
+
+//// #FFD400,
+    // #FFD400, #FF6200,  #FD7F2C,#FD9346,#FFFFB7,
+
+input:focus {
+  outline:none;
+}
+
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    #FFEA61,
+    #FFF192,
+    #FDB777,
+    #FDA766
+  );
+}
+.mark {
+  background-color: rgb(240, 240, 3);
+}
+
+.sunlife-header {
+  background-color: $sunlife-yellow;
+  height: 45px;
+  width: 100vw;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.btn-primary {
+  background: #ff5108;
+  border: 1px solid #ff5108;
+}
+
+.sunlife-logo {
+  transform: translateX(75px);
+  height: 45px;
+}
+
+.modal-body {
+  overflow-y: auto;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+}
+
+.sunlife-header-quick-start {
+  transform: translateX(90vw) translateY(-800px); 
+  z-index: 1;
+  background-color: $yellow-white;
+  border: 0.3px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 22px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.background1 {
+  max-width: 100vw;
+  max-height: 200px;
+  // height: 370px;
+}
+
+.welcome {
+  font-family: Verdana;
+  // background-image: url(https://wallpaperaccess.com/full/2454669.jpg);
+  background-color: black;
+  max-height: 600px;
+  margin: auto;
+}
+
+.welcome-text {
+  font-size: 80px;
+  margin: auto;
+  font-weight: bolder;
+  height: 350px;
+  color: rgb(253, 245, 90);
+  text-align: center;
+  transform: translateY(150px);
+}
+
+.welcome-sub-block {
+  color: rgb(251, 246, 139);
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  transform: translateX(540px) translateY(-40px);
+  display: inline-block;
+  width: 600px;
+  height: 490px;
+}
+
+.welcome-ml-style {
+  color: black;
+}
+
+.welcome-learn-ml {
+  transform: translateX(30px) translateY(250px);
+  background-color: $yellow-white;
+  border: solid 3px $sunlife-yellow;
+  width: 280px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.welcome-date-style {
+  color: black;
+}
+
+.welcome-learn-data {
+  transform: translateX(280px) translateY(250px);
+  background-color: $yellow-white;
+  border: solid 3px $sunlife-yellow;
+  width: 280px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.learn-more {
+  outline: none;
+  background: linear-gradient(green, blue);
+  height: 100px;
+}
+
+.learn-more-text {
+  outline: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  font-family: Verdana;
+ 
+  border-bottom: 1px solid grey;
+
+  .sticky-name {
+    transform: translateX(70px) translateY(22px);
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+  }
+}
+
+.sticky-header-two {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  background-color: black;
+  height: 70px;
+  width: 100vw;
+  
+  font-family: Verdana;
+  border-bottom: 1px solid white;
+
+  .sticky-name {
+    transform: translateX(70px) translateY(22px);
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+  }
+}
+
+.header {
+  position: sticky;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  // left: 0;
+  z-index: 1;
+  transition: .3s ease-in;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.87);
+  border-bottom: 0.2px solid $sunlife-yellow;
+}
+
+.header .navbar {
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin: 10px;
+  height: 100%;
+  padding-left: 4.5rem;
+  padding-right: 3rem;
+}
+
+.header .nav-menu a {
+  color: #ffffff;
+}
+
+.header .navbar img {
+  width: 200px;
+  height: auto;
+  // translate: translateX(2000px);
+}
+
+.header .nav-menu {
+  display:flex;
+}
+
+.header .nav-item {
+  padding: 1.8rem;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+.header .nav-item a:hover {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 3px solid $sunlife-yellow;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-header {
+  translate: translateY(200px);
+}
+
+@media screen and (max-width:940px) {
+  .header {
+      max-width: 100%;
+      background-color: rgb(0,0,0);
+  }
+
+  .header .navbar {
+      max-width: 100%;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .nav-menu {
+      position: sticky;
+      left: -100%;
+      top: 90px;
+      flex-direction: column;
+      background-color: rgb(0,0,0);
+      width: 100%;
+      height: 90vh;
+      z-index: 1;
+      // text-align: center;
+      transition: .3s;
+
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .header .navbar img {
+      width: 150px;
+  }
+}
+
+.startSurvey {
+  outline: none;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-position: left;
+  box-shadow: none;
+  // transition: background-position 1s;
+
+  animation: button-animation 3s infinite alternate;
+}
+
+.welcome-login {
+  margin: 2px 2px;
+  padding: 90px;
+  color: #fefbf5;
+  border: 2px;
+  transform: translateX(50px);
+}
+
+.welcome-button {
+  outline: none;
+  margin: auto;
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 15px;
+
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 10px;
+  
+  
+  align-items: center;
+  transform: translateX(0px) translateY(-20px); 
+  height: 30px;
+  width: 120px;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-position: left;
+  // transition: background-position 1s;
+
+  animation: button-animation 3s infinite alternate;
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.welcome-button:hover,
+.welcome-button:focus {
+  border-radius: 10px;
+  border: 1px solid $sunlife-header-yellow;
+}
+
+.tut-vid-section{
+  height: 900px;
+  background-color: rgb(0,0,0);
+  margin: 0.1rem 0.6rem;
+}
+
+.tut-connector {
+  width: 100px;
+  height: 70px;
+  background-color: $sunlife-yellow;
+  color: black;
+  transform: translateY(-7px) translateX(70px)
+}
+
+.connector-one-text {
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: bold; 
+  transform: translateY(26px) translateX(10px)
+}
+
+.tut-header {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Verdana;
+  padding: 2rem 8.3rem;
+  transform: translateY(50px);
+}
+
+.tut-vid-setup {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0rem 8rem;
+}
+
+.tut-vids {
+  transform: translateY(50px);
+  width: 450px;
+  height: 350px;
+}
+
+.tut-step-title {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0rem 8rem;
+}
+
+.tut-title-1 {
+  transform: translateY(79px) translateX(-52px);
+  font-size: 18px;
+  font-family: Verdana;
+  font-weight: bold;
+  color: $yellow-white;
+}
+.tut-title-2 {
+  transform: translateY(79px) translateX(-100px);
+  font-size: 18px;
+  font-family: Verdana;
+  font-weight: bold;
+  color: $yellow-white;
+}
+.tut-title-3 {
+  transform: translateY(79px) translateX(-85px);
+  font-size: 18px;
+  font-family: Verdana;
+  font-weight: bold;
+  color: $yellow-white;
+}
+
+.tut-step-explain {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0rem 8rem;
+  font-size: 15px;
+  font-weight:100;
+  color: white;
+}
+
+.tut-step-explain-1{
+  transform: translateY(75px) translateX(-6px);
+  font-family: Verdana;
+  width: 440px;
+  height: 350px;
+}
+
+.tut-step-explain-2{
+  transform: translateY(75px) translateX(-10px);
+  font-family: Verdana;
+  width: 430px;
+  height: 350px;
+}
+
+.tut-step-explain-3{
+  transform: translateY(75px) translateX(-10px);
+  font-family: Verdana;
+  width: 430px;
+  height: 350px;
+}
+
+.model-connector {
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  color: $sunlife-header-yellow;
+  transform: translateY(-42px) translateX(70px);
+}
+
+.model {
+  height: 1300px;
+}
+
+.model-one-text {
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: bold; 
+  transform: translateY(70px) translateX(10px)
+}
+
+.model-illustration {
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+  transform: translateY(200px);
+}
+
+.pic1 {
+  display: flex;
+  overflow: hidden;
+  margin: -10px;
+
+  height: 150px;
+}
+
+.pic2 {
+  display: flex;
+  overflow: hidden;
+  margin: 90px;
+
+  height: 150px;
+}
+
+.labels {
+  height: 1300px;
+  background-color: $sunlife-header-yellow;
+  margin: 0rem 1rem;
+}
+
+.labels-connector {
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  color: white;
+  transform: translateY(-42px) translateX(67px);
+}
+
+.labels-one-text {
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: bold; 
+  transform: translateY(70px) translateX(7px)
+}
+
+.labels-illustration {
+  font-size: 27px;
+  transform: translateX(150px) translateY(50px);
+}
+
+.labels-picktime {
+  transform: translateY(200px);
+}
+
+.label-header-1 {
+  transform: translateX(670px) translateY(-200px);
+}
+
+.daypick-model {
+  outline: none;
+  max-width: 14.8vw;
+  max-height: 35vh;
+  transform: translateX(150px) translateY(-100px);
+  border: solid black 3px;
+}
+
+.survey-Block {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.survey-Text {
+  display: flex;
+  transform: translateY(100px) 
+}
+
+.survey-start-button {
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translateY(200px);
+  box-shadow: none;
+}
+
+.survey-button {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translateY(200px);
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 20px;
+
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 10px;
+  
+  
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-position: left;
+  animation: button-animation 3s infinite alternate;
+}
+
+.email-grid {
+  // outline: none;
+  // display: grid;
+  // grid-auto-flow: column;
+  // grid-auto-columns: 100%;
+  // min-height: 1030px;email-element
+  // //grid-template-columns: repeat(3, 1fr);
+  // //grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .rec-dot:focus,
+  .rec-dot:hover,
+  .rec-dot_active,
+  .rec-arrow,
+  .rec-arrow:hover {
+    transform: scale(0.6);
+    box-shadow: 0 0 1px 3px var(--blue) !important;
+    background-color: $sunlife-yellow;
+  }
+  .rec-arrow:hover:not(:disabled) {
+    transform: scale(0.8);
+}
+
+  .email-element {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 86vh;
+    width: 95%;
+    border: 1px solid rgb(65, 64, 64);
+    border-radius: 15px;
+  }
+
+  .email-box-header {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transform: translateY(5px);
+  }
+  .separator {
+    transform: translateY(8px) translateX(4px);
+    width: 1420px;
+    z-index: -1;
+  }
+  .separator-2 {
+    width:60vw;
+    transform: translateY(10px) ;
+    z-index: -1;
+  }
+}
+
+.email-bar {
+  width: 270px;
+  transform: translateY(8px) translateX(20px);
+}
+
+.email-bar-individual {
+  display: flex;
+}
+
+.email-content {
+  font-size: 17px;
+  transform: translateX(17px);
+}
+
+.email-info-1 {
+  transform: translateY(30px);
+}
+
+.email-info-2 {
+  transform: translateY(60px);
+}
+
+.email-info-3 {
+  transform: translateY(90px);
+}
+
+.email-info-4 {
+  transform: translateY(120px);
+}
+
+.email-header {
+  font-size: 30px;
+  transform: translateX(25px);
+}
+
+.email-grid-big-block {
+  height: 200vh;
+}
+
+.email-box-labels {
+  display: flex;
+  // transform: translateX(525px);
+}
+
+// .submit-button {
+//   outline: none;
+//   color: rgb(65, 64, 64);
+//   box-shadow: none;
+//   font-family:Verdana;
+//   font-weight: bold;
+//   font-size: 20px;
+//   cursor: grab;
+
+//   height: 50px;
+//   width: 300px;
+//   padding: 0.5em 1.5em;
+//   border: 0.1px solid rgb(65, 64, 64);
+//   border-radius: 10px;
+  
+//   position: sticky;
+//   text-align: center;
+//   bottom: 0;
+//   transform: translateX(43vw) translateY(-150px); 
+//   background-color: $sunlife-header-yellow;
+//   z-index: -1;
+// }
+
+.submit-button {
+  outline: none;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: grab;
+
+  height: 50px;
+  width: 300px;
+  padding: 0.5em 1.5em;
+  border: 0.1px solid rgb(65, 64, 64);
+  border-radius: 10px;
+  cursor: pointer;
+  // position: sticky;
+  text-align: center;
+  transform: translateX(41vw) translateY(-45px); 
+  background-color: $sunlife-header-yellow;
+}
+
+.sender-button {
+  outline: none;
+  margin: auto;
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  
+  transform: translateY(10px) translateX(100px); 
+  height: 25px;
+  width: 340px;
+  background-color: white;
+}
+
+.label-button {
+  outline: none;
+  margin: auto;
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid rgb(182, 59, 59);
+  border-radius: 10px;
+  
+  transform: translateX(25px) translateY(90px); 
+  height: 30px;
+  width: 140px;
+  background-color: white;
+}
+
+.label-button-non {
+  outline: none;
+  margin: auto;
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid rgb(45, 125, 45);
+  border-radius: 10px;
+  
+  transform: translateX(55px) translateY(90px); 
+  height: 30px;
+  width: 180px;
+  background-color: white;
+}
+
+.save-button {
+  outline: none;
+  margin: auto;
+  cursor: grab;
+  color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  
+  transform: translateX(68vw) translateY(10px); 
+  height: 40px;
+  width: 180px;
+  background-color: white;
+}
+
+.slider-notes {
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 10px;
+  transform: translateX(500px) translateY(93px);
+}
+
+.confidence-slider {
+  outline: none;
+  margin: auto;
+  color: black; 
+  transform: translateX(500px) translateY(30px); 
+}
+
+.textbox {
+  transform: translateX(30px) translateY(70px);
+}
+
+.alert-box {
+  outline: none;
+  background-color: white;
+
+  .alert-header {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .alert-sub {
+    color: black;
+    font-size: 16px;
+    transform: translateY(-8px)
+  }
+}
+
+.submit-box {
+  outline: none;
+  background-color: white;
+
+  .submit-header {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .submit-sub {
+    color: black;
+    font-size: 16px;
+    transform: translateY(-8px)
+  }
+}
+
+.popover {
+  color: black;
+  overflow-y: scroll;
+  width: 690px;
+  height: 630px;
+  font-family: Verdana;
+  font-size: 13px;
+  transform: translateX(0px) translateY(20px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background:linear-gradient(#000,#000) center/1px 90% no-repeat;
+  background-position: 30% 0, 67% 0;
+}
+
+.popover-button {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.popover-content-button {
+  transform: translateX(45px) translateY(5px);
+  height: 23px;
+  width: 119px;
+  background-color: white;
+}
+
+.popover-content-detail {
+  transform: translateX(-90px);
+}
+
+.popover-separator {
+  width: 155px;
+  transform: translateX(-60px) translateY(25px);
+}
+
+.carousel-slider {
+  width: 70vh;
+  height: 80vh;
+}
+.footer {
+  height: 50px;
+  background-color: rgb(9, 8, 8);
+}
+
+.footer-note {
+  color: $sunlife-yellow;
+  font-size: 16px;
+  transform: translateY(24px);
+  text-align: center;
+}
+
+.score-page {
+  background-image: url(https://wallpaperaccess.com/full/2454669.jpg);
+}
+
+.show-score {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 38px;
+  color: black;
+  font-weight: bold;
+  transform: translateY(43vh);
+}
+
+.show-score-2 {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 38px;
+  color: orange;
+  font-weight: bold;
+  transform: translateY(45vh);
+}
+
+.show-score-3 {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 38px;
+  color: $sunlife-header-yellow;
+  font-weight: bold;
+  transform: translateY(45vh);
+}
+
+.redeem-button {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translateY(500px);
+  cursor: grab;
+  color: black;
+  font-family:Verdana;
+  font-weight: bold;
+  font-size: 20px;
+
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 10px;
+  
+  
+  align-items: center;
+  height: 50px;
+  width: 350px;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-position: left;
+  animation: button-animation 3s infinite alternate;
+}
+
+.max {
+  transform: translateX(30px);
+}
+
+.log-in-item {
+  display: flex;
+}
+
+.log-in-form {
+  height: 400px;
+  transform: translateX(300px) translateY(60px);
+}
+
+.welcome-log-in {
+  color: white;
+}
+
+.welcome-log-in-nav {
+  transform: translateX(810px) translateY(-370px);
+}
+
+.userinfo {
+  // display: flex;
+}
+
+.userinfo-welcome-text {
+  transform: translateX(70px);
+}
+
+.userinfo-history-button {
+  transform: translateX(80px) translateY(90px);
+}
+
+.userinfo-label-button {
+  transform: translateX(670px) translateY(90px);
+}
+
+.history-button {
+  transform: translateX(80px) translateY(90px);
+}
+
+.history-show {
+  transform: translateX(80px) translateY(30px);
+}
